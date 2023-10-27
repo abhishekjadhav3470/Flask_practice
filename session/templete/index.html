@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Example</title>
+</head>
+<body>
+    <h1>Session Example</h1>
+    
+    {% if user_data %}
+    <p>User Data in Session: {{ user_data }}</p>
+    <a href="/clear_session">Clear Session</a>
+    {% else %}
+    <p>No user data in session.</p>
+    <form method="post" action="/set_session">
+        <label for="user_data">Enter User Data:</label>
+        <input type="text" id="user_data" name="user_data">
+        <button type="submit">Set User Data in Session</button>
+    </form>
+    {% endif %}
+</body>
+</html>
