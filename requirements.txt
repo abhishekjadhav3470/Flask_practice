@@ -1,3 +1,10 @@
 flask
 flask_cors
 flask_session
+jinja
+
+
+
+# pip install Flask
+# pip install Flask-CORS
+# pip install Flask-Session
